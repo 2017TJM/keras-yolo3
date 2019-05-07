@@ -98,8 +98,8 @@ the data like this:
 
 1. The test environment is
     - Python 3.5.2
-    - Keras 2.1.5
-    - tensorflow 1.6.0
+    - Keras 2.1.5 or 2.2.4 and so on
+    - tensorflow 1.6.0 or tensorflow-GPU 1.18.0/1.19.0  and so on 
 
 2. Default anchors are used. If you use your own anchors, probably some changes are needed.
 
