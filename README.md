@@ -78,19 +78,19 @@ If you want to use original pretrained weights for YOLOv3:
     4. use model_data/darknet53_weights.h5 in train.py
 
 ---
-## our training date from:https://github.com/detectRecog/CCPD
+## othor our training date from:https://github.com/detectRecog/CCPD
 ## for the CCPD data how to train:
-# step 1:
+# step 1:downloads the data from above link
 you should downloads the data from above the link and then use the voc data 
-# step 2:
-you need use the data ,so,push the data under "keras-yolo3-master " file
+# step 2:push the data under the "keras-yolo3-master " file
+you need use the data ,so,push the data under "keras-yolo3-master " file. | 
 the data like this:
        keras-yolo3-master/data
-# step 3:
+# step 3: generate ***.txt 
          python 自己的数据集自作1.py ,after you run 自己的数据集自作1.py file ,you can see id file ,and like this: ***.txt
-# step 4:
+# step 4:generate train.txt 
            
-        python 自己的数据集自作2.py ,to generate train_plate_data.txt file ,we will use it to train our model.
+    just run " python 自己的数据集自作2.py ",to generate train_plate_data.txt file ,we will use it to train our model.
                  
 ## Some issues to know
 
