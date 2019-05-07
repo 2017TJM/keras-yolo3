@@ -87,7 +87,10 @@ you need use the data ,so,push the data under "keras-yolo3-master " file
 the data like this:
        keras-yolo3-master/data
 # step 3:
-      
+         python 自己的数据集自作1.py ,after you run 自己的数据集自作1.py file ,you can see id file ,and like this: ***.txt
+# step 4:
+           
+        python 自己的数据集自作2.py ,to generate train_plate_data.txt file ,we will use it to train our model.
                  
 ## Some issues to know
 
