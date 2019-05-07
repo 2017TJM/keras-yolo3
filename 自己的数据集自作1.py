@@ -1,5 +1,5 @@
 #图像ID要改变 首先要获得图像id
-#authou:TJM2017 
+#author:TJM2017 
 #time 2019/5/7
 import os
 import random
