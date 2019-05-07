@@ -79,6 +79,16 @@ If you want to use original pretrained weights for YOLOv3:
 
 ---
 ## our training date from:https://github.com/detectRecog/CCPD
+## for the CCPD data how to train:
+# step 1:
+you should downloads the data from above the link and then use the voc data 
+# step 2:
+you need use the data ,so,push the data under "keras-yolo3-master " file
+the data like this:
+       keras-yolo3-master/data
+# step 3:
+      
+                 
 ## Some issues to know
 
 1. The test environment is
