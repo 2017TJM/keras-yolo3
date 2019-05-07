@@ -78,7 +78,7 @@ If you want to use original pretrained weights for YOLOv3:
     4. use model_data/darknet53_weights.h5 in train.py
 
 ---
-## othor our training date from:https://github.com/detectRecog/CCPD
+## othor our training date1 from:https://github.com/detectRecog/CCPD
 ## for the CCPD data how to train:
 # step 1:downloads the data from above link
 you should downloads the data from above the link and then use the voc data 
@@ -91,7 +91,9 @@ the data like this:
 # step 4:generate train.txt 
            
     just run " python 自己的数据集自作2.py ",to generate train_plate_data.txt file ,we will use it to train our model.
-                 
+
+## othor training data from :https://github.com/bing0037/Raccoon_dataset
+    thanks for the data and  code .
 ## Some issues to know
 
 1. The test environment is
