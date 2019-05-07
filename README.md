@@ -92,7 +92,7 @@ the data like this:
            
     just run " python 自己的数据集自作2.py ",to generate train_plate_data.txt file ,we will use it to train our model.
 
-## othor training data from :https://github.com/bing0037/Raccoon_dataset
+## othor training data2 from :https://github.com/bing0037/Raccoon_dataset
     thanks for the data and  code .
 ## Some issues to know
 
