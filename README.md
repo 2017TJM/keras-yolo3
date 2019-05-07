@@ -78,7 +78,7 @@ If you want to use original pretrained weights for YOLOv3:
     4. use model_data/darknet53_weights.h5 in train.py
 
 ---
-
+## our training date from:https://github.com/detectRecog/CCPD
 ## Some issues to know
 
 1. The test environment is
