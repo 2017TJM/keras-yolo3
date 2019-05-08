@@ -294,9 +294,43 @@ def preprocess_true_boxes(true_boxes, input_shape, anchors, num_classes):
                     j = np.floor(true_boxes[b,t,1]*grid_shapes[l][0]).astype('int32')
                     k = anchor_mask[l].index(n)
                     c = true_boxes[b,t, 4].astype('int32')
-                    y_true[l][b, j, i, k, 0:4] = true_boxes[b,t, 0:4]
-                    y_true[l][b, j, i, k, 4] = 1
-                    y_true[l][b, j, i, k, 5+c] = 1
+                    #y_true[l][b, j, i, k, 0:4] = true_boxes[b,t, 0:4]
+                    #y_true[l][b, j, i, k, 4] = 1
+                    #y_true[l][b, j, i, k, 5+c] = 1
+                 try:
+                    if i <= 13 and j <= 13:
+                        y_true[l][b, j, i, k, 0:4] = true_boxes[b, t, 0:4]  # 第b张图像，尺度，尺度，anchor，坐标
+                        y_true[l][b, j, i, k, 4] = 1
+                        y_true[l][b, j, i, k, 5 + c] = 1
+#                         print("第一个尺度y_true：", y_true)
+#                         print("第一个尺度class ID", c)
+#                         print("第一个尺度J==", j)
+#                         print("第一个尺度i==", i)  # 宽和归一化后矩形框的宽以及输入图像降采样的大小有关
+                   # if l == 2:
+                    elif i <= 26 and j <= 26:
+                        y_true[l][b, j, i, k, 0:4] = true_boxes[b, t, 0:4]  # 第b张图像，尺度，尺度，anchor，坐标
+                        y_true[l][b, j, i, k, 4] = 1
+                        y_true[l][b, j, i, k, 5 + c] = 1
+#                         print("第二个尺度y_true：", y_true)
+#                         print("第二个尺度class ID", c)
+#                         print("第二个尺度J==", j)
+#                         print("第二个尺度i==", i)  # 宽和归一化后矩形框的宽以及输入图像降采样的大小有关
+                        # else:
+
+                        #     break
+                    # if l == 3:
+                    elif i <= 52 and j <= 52:
+                        y_true[l][b, j, i, k, 0:4] = true_boxes[b, t, 0:4]  # 第b张图像，尺度，尺度，anchor，坐标
+                        y_true[l][b, j, i, k, 4] = 1
+                        y_true[l][b, j, i, k, 5 + c] = 1
+#                         print("第三个尺度y_true：",y_true)
+#                         print("第三个尺度class ID", c)
+#                         print("第三个尺度J==", j)
+#                         print("第三个尺度i==", i)  # 宽和归一化后矩形框的宽以及输入图像降采样的大小有关
+                except:
+                    pass
+            break
+                    
 
     return y_true
 
